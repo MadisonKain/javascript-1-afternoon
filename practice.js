@@ -14,39 +14,32 @@ var greetingsEarthlings = { greeting, newGreeting, finalGreeting }
 //plus the value of the name parameter. 
 
 //Code here
-
-
-
-
+function greeting (){
+  return "Hello, " + name;
+};
 //////////////////PROBLEM 2////////////////////
 
 //Rewrite the function greeting as a function expression.
 //Name it newGreeting (You must use a var for this instead of let or const)
 
 //Code Here
-
-
-
-
+var newGreeting = function (name){
+  return "Hello, " + name;
+};
 //////////////////PROBLEM 3////////////////////
 
 //Rewrite the function greeting as an arrow function.
 //Name it finalGreeting (You must use a var for this instead of let or const)
 
 //Code Here
-
-
-
-
+var finalGreeting = name => "Hello, " + name;
 //////////////////PROBLEM 4////////////////////  
 
 //Create an array called groceries with the values 
 //"apples", "milk", "eggs", "bread"
 
   //Code Here
-  
-
-
+var groceries = ["apples","milk","eggs","bread"];
 //Write a function called doubleCheck that takes in an array 
 //as a parameter.
 
@@ -54,10 +47,12 @@ var greetingsEarthlings = { greeting, newGreeting, finalGreeting }
 //doubleCheck should return the array.
 
   //Code Here
-  
-
-
-
+function doubleCheck (arr){
+  for (i=0;i==="Chocolate";i++){
+    arr.push("chocolate");
+  };
+  return arr;
+};
 //////////////////PROBLEM 5////////////////////  
 
 //Create an object saved to the variable dog.
@@ -66,30 +61,23 @@ var greetingsEarthlings = { greeting, newGreeting, finalGreeting }
 //and goodBoy (a boolean).
 
 //Code Here
-
-
-
+var dog = {name:"Diva",color:"Red",age:6,goodBoy:true};
 //...access the dog's name from the object and assign it to a 
 //variable called devMountainClassPet.
 
     //Code Here
-    
-
-
+    var devMountainClassPet = dog.name;
 //Add a method to dog called bark.
 //The value of bark should be a function that returns the string "Woof woof"
 
   //Code Here
-  
-
-
+  dog.bark = function (){
+    return "Woof woof";
+  };
 //Store the result of invoking the bark method in a variable called ruff
 
   //Code Here
-  
-
-
-
+  var ruff = dog.bark();
 //////////////////PROBLEM 6////////////////////
 
 //Write a function called looper that takes in an array. looper should declare
@@ -102,7 +90,14 @@ var greetingsEarthlings = { greeting, newGreeting, finalGreeting }
 //Return mySum.
 
 //Code Here
-
+function looper (arr){
+  var mySum
+  for (i=0;i>=100;i++){
+    if (i%2!==0){
+      
+    };
+  };
+};
 
 
 
